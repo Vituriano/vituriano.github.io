@@ -1,10 +1,13 @@
+/* eslint-disable quotes */
 module.exports = {
   siteMetadata: {
-    title: `My Site`,
-    description: `This site it's about myself. He talk about my skills, my projects and how contact me.`,
-    author: `vituriano Oliveira Xisto`,
+    title: `Vituriano Xisto`,
+    author: `Vituriano Xisto`,
+    position: `Computer Engineering Student`,
+    description: `Developer at CITi, Devops culture enthusiast. Likes the world of Web technologies but loves <3 robotics.`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,4 +34,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
