@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <PostItem
-      slug="/"
+      slug="/"  
       background="purple"
       category="JS"
       date="30 de Janeiro"

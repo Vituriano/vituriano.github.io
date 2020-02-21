@@ -13,7 +13,7 @@ const MenuBar = () => (
       <S.MenuBarLink to="/" title="Back to Home">
         <S.MenuBarItem><Home /></S.MenuBarItem>
       </S.MenuBarLink>
-      <S.MenuBarLink to="Search" title="Search">
+      <S.MenuBarLink to="/search" title="Search">
         <S.MenuBarItem><Search /></S.MenuBarItem>
       </S.MenuBarLink>
     </S.MenuBarGroup>
