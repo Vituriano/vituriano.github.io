@@ -24,7 +24,7 @@ const PostItem = ({
           •
           &nbsp;
           {timeToRead}
-          &nbsp;min de leitura
+          &nbsp;min to read
         </S.PostItemDate>
         <S.PostItemTitle>
           {title}
@@ -42,7 +42,7 @@ PostItem.propTypes = {
   background: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
+  timeToRead: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

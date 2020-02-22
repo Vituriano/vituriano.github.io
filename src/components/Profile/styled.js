@@ -18,15 +18,21 @@ export const ProfileLink = styled(Link)`
   }
 `;
 
-export const ProfileAuthor = styled.h1`
-  font-size: 1.6rem;
-  margin: 0.5rem auto 1.5rem;
+export const ProfileAuthor = styled.div`
+  font-size: 1.7rem;
+  margin: 0.5rem auto 2rem;
 `;
+
+export const ProfilePositionTitle = styled.h1`
+  font-size: 1.7rem;
+  font-weight: 1000;
+`;
+
 
 export const ProfilePosition = styled.small`
   display: block;
-  font-size: 1.1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 0;
 `;
 
 export const ProfileDescription = styled.p`

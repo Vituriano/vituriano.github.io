@@ -4,16 +4,29 @@ module.exports = {
     title: `Vituriano Xisto`,
     author: `Vituriano Xisto`,
     position: `Computer Engineering Student`,
-    description: `Developer at CITi, Devops culture enthusiast. Likes the world of Web technologies but loves <3 robotics.`,
+    description: `Developer at CITi and devops culture enthusiast. I have a thing for the world of web technologies, but my love is <3 robotics.`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet-async`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
       },
     },
     `gatsby-transformer-sharp`,
