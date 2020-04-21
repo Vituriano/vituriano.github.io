@@ -28,6 +28,7 @@ const BlogList = (props) => {
               date,
               description,
               title,
+              color,
             },
             timeToRead,
             fields: {
@@ -44,6 +45,7 @@ const BlogList = (props) => {
               timeToRead={timeToRead}
               title={title}
               description={description}
+              color={color} 
             />
           ))}
       </S.ListWrapper>
@@ -74,6 +76,7 @@ export const query = graphql`
             date(formatString: "MMMM DD[,] YYYY", locale: "en-us")
             category
             background
+            color
           }
           timeToRead
           fields {

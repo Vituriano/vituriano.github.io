@@ -2,8 +2,9 @@
 date: 2015-01-03 05:04:23
 title: Deploy CIN 0
 description: HAHAHAH Post no Bloggg
-category:
+category: XP
 background: "url(http://localhost:8000/assets/img/desert.jpeg)" 
+color: "red"
 image: "/assets/img/desert.jpeg"
 ---
 ![Teste](/assets/img/desert.jpeg)

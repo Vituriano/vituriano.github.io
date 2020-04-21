@@ -13,6 +13,7 @@ const postQuery = `{
           date(formatString: "MMMM DD[,] YYYY", locale: "en-us")
           description
           background
+          color
         }
         timeToRead
         excerpt(pruneLength: 5000)

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import getThemeColor from '../../utils/getThemeColor';
 import Avatar from '../Avatar';
 import * as S from './styled';
 
@@ -23,7 +24,7 @@ const Profile = () => {
 
   return (
     <S.ProfileWraper>
-      <S.ProfileLink to="/">
+      <S.ProfileLink cover direction="left" bg={getThemeColor()} duration={1} to="/">
         <Avatar />
         <S.ProfileAuthor>
         <S.ProfilePositionTitle>{title}</S.ProfilePositionTitle>

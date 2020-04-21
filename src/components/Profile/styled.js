@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import media from 'styled-media-query';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const ProfileWraper = styled.section`
   color: var(--texts);
@@ -8,10 +9,15 @@ export const ProfileWraper = styled.section`
   flex-direction: column;
 `;
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(AniLink)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+
+  ${media.lessThan('large')`
+    display: flex;
+    text-align: left;
+  `}
 
   &:hover {
     color: var(--highlight);
@@ -21,6 +27,11 @@ export const ProfileLink = styled(Link)`
 export const ProfileAuthor = styled.div`
   font-size: 1.7rem;
   margin: 0.5rem auto 2rem;
+
+  ${media.lessThan('large')`
+    font-size: 1.2em;
+    margin: 0 0 0 10px;
+  `}
 `;
 
 export const ProfilePositionTitle = styled.h1`
@@ -33,10 +44,19 @@ export const ProfilePosition = styled.small`
   display: block;
   font-size: 1.2rem;
   font-weight: 0;
+
+  ${media.lessThan('large')`
+    font-size: 0.8em;
+    margin-top: 0.2em;
+  `}
 `;
 
 export const ProfileDescription = styled.p`
   font-size: 1rem;
   font-weight: 300;
-  line-height: 1.4
+  line-height: 1.4;
+
+  ${media.lessThan('large')`
+    display: none;
+  `}
 `;

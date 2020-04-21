@@ -7,6 +7,7 @@ import { UpArrowAlt as UpArrow } from 'styled-icons/boxicons-regular/UpArrowAlt'
 import { LightbulbFlash as Light } from 'styled-icons/remix-fill/LightbulbFlash';
 import { ThList as List } from 'styled-icons/typicons/ThList';
 import { Grid } from 'styled-icons/boxicons-solid/Grid';
+import getThemeColor from '../../utils/getThemeColor';
 import * as S from './styled';
 
 const MenuBar = () => {
@@ -26,10 +27,10 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Back to Home">
+        <S.MenuBarLink to="/" cover direction="right" bg={getThemeColor()} duration={1} title="Back to Home">
           <S.MenuBarItem><Home /></S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search" title="Search">
+        <S.MenuBarLink to="/search" cover direction="right" bg={getThemeColor()} duration={1} title="Search">
           <S.MenuBarItem><Search /></S.MenuBarItem>
         </S.MenuBarLink>
       </S.MenuBarGroup>
@@ -49,6 +50,7 @@ const MenuBar = () => {
             window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
           }}
           id={display}
+          className="display"
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>

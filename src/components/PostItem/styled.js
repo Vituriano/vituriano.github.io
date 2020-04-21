@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import media from 'styled-media-query';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-export const PostItemLink = styled(Link)`
+export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
@@ -27,6 +28,12 @@ export const PostWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
   }
+
+  ${media.lessThan('large')`
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  `}
 `;
 
 export const PostTag = styled.div`
@@ -39,15 +46,34 @@ export const PostTag = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   justify-content: center;
-  min-height: calc(100% - 20px);
-  min-width: 200px;
+  min-height: 120px;
+  min-width: 120px;
   margin: 10px 0 10px 10px;
   text-decoration: uppercase;
 
   body#grid & {
     min-height: 200px;
     min-width: 100%;
+    margin: 0;
   }
+
+  .category{
+    display: none;
+  }
+
+  ${media.lessThan('large')`
+    background: ${(props) => (props.color)} no-repeat center;
+    border-radius: 0;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    padding: .2rem .5rem;
+    margin: 0;
+
+    .category{
+      display: block;
+    }
+  `}
 `;
 
 export const PostItemInfo = styled.div`
@@ -56,6 +82,10 @@ export const PostItemInfo = styled.div`
   padding-left: 0;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  ${media.lessThan('large')`
+    margin: 0;
+  `}
 `;
 
 export const PostItemDate = styled.time`
@@ -69,7 +99,7 @@ export const PostItemTitle = styled.h1`
 
   body#grid & {
     line-height: 1.1;
-    margin: 0.8rem 0;
+    margin: 0;
   }
 `;
 

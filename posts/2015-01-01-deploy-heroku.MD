@@ -2,8 +2,10 @@
 date: 2015-01-03 05:04:23
 title: Deploy gitLab 3
 description: HAHAHAH Post no Bloggg
-category:
+category: Jekill
 background: "url(https://s3.amazonaws.com/blog-geek-midia/wp-content/uploads/2019/11/28163156/Afinal-o-que-%C3%A9-Node.Js-1024x576.jpg)"
+color: "red"
+image: "/assets/img/desert.jpeg"
 ---
 ![Teste](/assets/img/desert.jpeg)
 

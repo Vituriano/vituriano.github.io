@@ -2,8 +2,10 @@
 date: 2015-01-03 05:04:23
 title: Deploy Globo 2
 description: Deploy de aplicação Node na AWS.
-category:
+category: CMS
 background: "url(https://s3.amazonaws.com/blog-geek-midia/wp-content/uploads/2019/11/28163156/Afinal-o-que-%C3%A9-Node.Js-1024x576.jpg)"
+color: "red"
+image: "/assets/img/desert.jpeg"
 ---
 ![Teste](/assets/img/desert.jpeg)
 
