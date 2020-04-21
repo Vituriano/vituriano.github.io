@@ -24,7 +24,7 @@ const PostItem = ({
           •
           &nbsp;
           {timeToRead}
-          &nbsp;min to read
+          &nbsp;min read
         </S.PostItemDate>
         <S.PostItemTitle>
           {title}

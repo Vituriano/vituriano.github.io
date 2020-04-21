@@ -1,5 +1,4 @@
-/* eslint-disable react/no-danger */
-/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable  */
 import React from 'react';
 import { graphql } from 'gatsby';
 
@@ -7,6 +6,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem';
 import Pagination from '../components/Pagination';
+
+import * as S from '../components/ListWrapper/styled';
 
 const BlogList = (props) => {
   const PostList = props.data.allMarkdownRemark.edges;
@@ -18,32 +19,34 @@ const BlogList = (props) => {
   return (
     <Layout>
       <SEO title="Home" />
-      {PostList.map(({
-        node: {
-          frontmatter: {
-            background,
-            category,
-            date,
-            description,
-            title,
+      <S.ListWrapper>
+        {PostList.map(({
+          node: {
+            frontmatter: {
+              background,
+              category,
+              date,
+              description,
+              title,
+            },
+            timeToRead,
+            fields: {
+              slug,
+            },
           },
-          timeToRead,
-          fields: {
-            slug,
-          },
-        },
-      }) => (
-        <PostItem
-          key={slug}
-          slug={slug}
-          background={background}
-          category={category}
-          date={date}
-          timeToRead={timeToRead}
-          title={title}
-          description={description}
-        />
-      ))}
+        }) => (
+            <PostItem
+              key={slug}
+              slug={slug}
+              background={background}
+              category={category}
+              date={date}
+              timeToRead={timeToRead}
+              title={title}
+              description={description}
+            />
+          ))}
+      </S.ListWrapper>
       <Pagination
         isFirst={isFirst}
         isLast={isLast}

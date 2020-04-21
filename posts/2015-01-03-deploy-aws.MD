@@ -1,10 +1,12 @@
 ---
 date: 2015-01-03 05:04:23
-title: Deploy AWS 1
+title: Deploy Globo 2
 description: Deploy de aplicação Node na AWS.
-category: JS
-background: "#7aab13"
+category:
+background: "url(https://s3.amazonaws.com/blog-geek-midia/wp-content/uploads/2019/11/28163156/Afinal-o-que-%C3%A9-Node.Js-1024x576.jpg)"
 ---
+![Teste](/assets/img/desert.jpeg)
+
 # Quod est indelebile
 
 ## Secura meritis loco quos qua cingentibus dapes
@@ -15,10 +17,6 @@ frontem fecere, poteram ilia spectat potuit; dare nulli; praeter voluisti? Magis
 arma uti cessisse *vigilans metuenda Amyclis*, tinguamus, nostris miserat
 credant illi? Abstulit aureus, possit autem fera est spatiosum unus sua Phinea
 turis postquam.
-
-    optical_volume += 1 * os;
-    restore.task *= exploit(hoc) + bookmarkTrackbackWord;
-    var abend_signature_language = recordPackCookie;
 
 Profugos equosque [tamen](http://cum.com/)! Corpora gravitate haerens erat
 coniunx.

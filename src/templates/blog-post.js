@@ -1,15 +1,39 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-danger */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { graphql } from 'gatsby';
 
-const BlogPost = ({ data }) => {
+import Layout from '../components/Layout';
+import SEO from '../components/seo';
+import RecommendedPosts from '../components/RecommendedPosts';
+
+import * as S from '../components/Post/styled';
+
+const BlogPost = ({ data, pageContext }) => {
   const Post = data.markdownRemark;
+  const next = pageContext.nextPost;
+  const previous = pageContext.previousPost;
   return (
-    <>
-      <h1>{Post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: Post.html }} />
-    </>
+    <Layout>
+      <SEO title={Post.frontmatter.title} description={Post.frontmatter.description} image={Post.frontmatter.image} />
+      <S.PostHeader>
+        <S.PostDate>
+          {Post.frontmatter.date}
+          &nbsp;
+          •
+          &nbsp;
+          {Post.timeToRead}
+          &nbsp;min read
+        </S.PostDate>
+        <S.PostTitle>{Post.frontmatter.title}</S.PostTitle>
+        <S.PostDescription>{Post.frontmatter.description}</S.PostDescription>
+      </S.PostHeader>
+      <S.MainContent>
+        <div dangerouslySetInnerHTML={{ __html: Post.html }} />
+      </S.MainContent>
+      <RecommendedPosts next={next} previous={previous} />
+    </Layout>
   );
 };
 
@@ -18,8 +42,12 @@ export const query = graphql`
     markdownRemark(fields: {slug: {eq: $slug}}) {
       frontmatter {
         title
+        description
+        date(formatString: "MMMM DD[,] YYYY", locale: "en-us")
+        image
       }
       html
+      timeToRead
     }
   }
 `;
