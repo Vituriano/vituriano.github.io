@@ -7,6 +7,22 @@ export const ProfileWraper = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
+
+  .menu{
+    display: none;
+  }
+
+  ${media.lessThan('large')`
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+    .menu{
+      display: inline;
+      height: 3rem;
+      width: 3rem;
+    }
+  `}
 `;
 
 export const ProfileLink = styled(AniLink)`

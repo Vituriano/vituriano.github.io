@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect } from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';  
 import { HomeHeart as Home } from 'styled-icons/boxicons-solid/HomeHeart';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
 import { UpArrowAlt as UpArrow } from 'styled-icons/boxicons-regular/UpArrowAlt';
@@ -54,7 +55,7 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Page Up"><UpArrow /></S.MenuBarItem>
+        <S.MenuBarItem onClick={() => scrollTo('#top')} title="Page Up"><UpArrow /></S.MenuBarItem>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   );

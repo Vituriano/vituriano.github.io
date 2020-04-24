@@ -10,7 +10,7 @@ import * as S from './styled';
 
 function Layout({ children }) {
   return (
-    <S.LayoutWrapper>
+    <S.LayoutWrapper id="top">
       <GlobalStyles />
       <TransitionPortal level="top">
         <Sidebar />

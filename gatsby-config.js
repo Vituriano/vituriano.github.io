@@ -9,11 +9,12 @@ module.exports = {
     author: `@vitu_xisto`,
     position: `Computer Engineering Student`,
     description: `Developer at CITi and devops culture enthusiast. I have a thing for the world of web technologies, but my love is <3 robotics.`,
-    siteUrl: `https://vituriano.xyz`,
+    siteUrl: `http://vituriano.xyz`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet-async`,
     {
       resolve: `gatsby-source-filesystem`,
