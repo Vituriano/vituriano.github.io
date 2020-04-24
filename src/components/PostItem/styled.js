@@ -24,7 +24,8 @@ export const PostWrapper = styled.section`
 
   body#grid & {
     border: none;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
+    padding-top: 2rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -99,7 +100,7 @@ export const PostItemTitle = styled.h1`
 
   body#grid & {
     line-height: 1.1;
-    margin: 0;
+    margin: 10px 0;
   }
 `;
 

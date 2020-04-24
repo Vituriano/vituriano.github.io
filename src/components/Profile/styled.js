@@ -14,13 +14,14 @@ export const ProfileWraper = styled.section`
 
   ${media.lessThan('large')`
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
     
     .menu{
       display: inline;
-      height: 3rem;
-      width: 3rem;
+      height: 2rem;
+      width: 2rem;  
     }
   `}
 `;

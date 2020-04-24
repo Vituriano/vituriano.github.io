@@ -10,8 +10,8 @@ export const ProfileWraper = styled.section`
   animation: open 1s both;
   transition: opacity 1s ease;
   @keyframes open {
-    0% {top: -18em; height: 0;}
-    100% {top: 0; height: 18em}
+    0% {top: -17em; height: 0;}
+    100% {top: 0; height: 17em}
   }
 `;
 
@@ -25,5 +25,6 @@ export const ProfileDescription = styled.p`
 export const item = styled.div`
   ${media.lessThan('large')`
     display: block;
+    background: var(--mediumBackground); 
   `}
 `;

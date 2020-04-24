@@ -2,10 +2,10 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';  
-import { HomeHeart as Home } from 'styled-icons/boxicons-solid/HomeHeart';
+import { HomeSmile as Home } from 'styled-icons/boxicons-solid/HomeSmile';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
 import { UpArrowAlt as UpArrow } from 'styled-icons/boxicons-regular/UpArrowAlt';
-import { LightbulbFlash as Light } from 'styled-icons/remix-fill/LightbulbFlash';
+import { LightbulbFlash as Light } from 'styled-icons/remix-line/LightbulbFlash';
 import { ThList as List } from 'styled-icons/typicons/ThList';
 import { Grid } from 'styled-icons/boxicons-solid/Grid';
 import getThemeColor from '../../utils/getThemeColor';

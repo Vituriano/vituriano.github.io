@@ -6,8 +6,8 @@ import MenuLinks from '../MenuLinks';
 
 const Menu = ({ description }) => (
   <S.ProfileWraper>
-    <S.ProfileDescription>{description}</S.ProfileDescription>
     <S.item>
+      <S.ProfileDescription>{description}</S.ProfileDescription>
       <SocialLinks />
       <MenuLinks />
     </S.item>
