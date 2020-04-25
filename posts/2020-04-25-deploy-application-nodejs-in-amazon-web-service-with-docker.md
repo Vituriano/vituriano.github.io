@@ -5,9 +5,9 @@ description: "I will be objective in this article, the goal is to describe a
   process of deploy a application NodeJS in AWS with Docker, in Ubuntu 18 system
   or other compatible systems. "
 category: infra
-background: 
+background: ""
 color: "#ea4335"
-image: 
+image: ""
 ---
 ## Instalations
 
