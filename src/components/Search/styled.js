@@ -8,6 +8,7 @@ export const SearchWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   transition: opacity 0.4s;
+
   .ais-InstantSearch__root {
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@ export const SearchWrapper = styled.section`
   }
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0 5.75rem 1rem 22rem;
 
     ${media.lessThan('large')`
       padding: 0.5rem 1rem;

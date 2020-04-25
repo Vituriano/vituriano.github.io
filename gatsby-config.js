@@ -57,8 +57,8 @@ module.exports = {
         name: `Vituriano Xisto`,
         short_name: `Vituriano Xisto`,
         start_url: `/`,
-        background_color: `#16202c`,
-        theme_color: `#16202c`,
+        background_color: `#0a040d`,
+        theme_color: `#0a040d`,
         display: `minimal-ui`,
         icon: `static/assets/img/icon.png`, // This path is relative to the root of the site.
       },

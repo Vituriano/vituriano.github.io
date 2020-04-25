@@ -10,6 +10,7 @@ const Hit = ({ hit }) => (
     date={hit.date}
     description={hit.description}
     category={hit.category}
+    color={hit.color}
     background={hit.background}
     timeToRead={hit.timeToRead}
   />
@@ -28,6 +29,7 @@ Hit.propTypes = {
     category: propTypes.string,
     background: propTypes.string,
     timeToRead: propTypes.string,
+    color: propTypes.string,
   }),
 };
 
