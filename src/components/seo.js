@@ -35,7 +35,7 @@ function SEO({
   const metaDescription = description || site.siteMetadata.description;
 
   const url = site.siteMetadata.siteUrl;
-  const ogImage = `${url}${image || '/assets/img/desert.jpeg'}`;
+  const ogImage = `${url}${image || '/assets/img/icon.png'}`;
 
   return (
     <HelmetProvider>
