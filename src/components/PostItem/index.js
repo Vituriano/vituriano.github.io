@@ -17,8 +17,8 @@ const PostItem = ({
   <S.PostItemLink cover direction="right" bg={getThemeColor()} duration={1} to={slug}>
     <S.PostWrapper>
       <S.PostTag background={background} color={color}>
-        {background === null ? category : ''}
-        <p className="category">{background !== null ? category : ''}</p>
+        {background === '' ? category : ''}
+        <p className="category">{background !== '' ? category : ''}</p>
       </S.PostTag>
       <S.PostItemInfo>
         <S.PostItemDate>

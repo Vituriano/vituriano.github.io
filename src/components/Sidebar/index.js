@@ -10,7 +10,7 @@ const Sidebar = () => (
     <Profile />
     <S.Sidebaritem>
       <SocialLinks />
-      <MenuLinks   />
+      <MenuLinks />
     </S.Sidebaritem>
   </S.SidebarWrapper>
 );

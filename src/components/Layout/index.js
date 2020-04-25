@@ -19,7 +19,7 @@ function Layout({ children }) {
         {children}
       </S.LayoutMain>
       <TransitionPortal level="top">
-        <MenuBar />
+        <MenuBar /> 
       </TransitionPortal>
     </S.LayoutWrapper>
   );

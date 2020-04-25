@@ -6,6 +6,7 @@ export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
+  padding: 0 3.75rem 0 20rem;
 
   body#grid & {
     background-color: var(--background);
@@ -14,6 +15,10 @@ export const PostItemLink = styled(AniLink)`
   &:hover {
     color: var(--highlight);
   }
+
+  ${media.lessThan('large')`
+    padding: 0;
+  `}
 `;
 
 export const PostWrapper = styled.section`
@@ -39,7 +44,7 @@ export const PostWrapper = styled.section`
 
 export const PostTag = styled.div`
   align-items: center;
-  background: ${(props) => (props.background ? `url(${props.background})` : props.color)} no-repeat center;
+  background: ${(props) => (props.background !== '' ? `url(${props.background})` : props.color)} no-repeat center;
   background-size: cover, contain;
   border-radius: 0;
   color: #fff;
