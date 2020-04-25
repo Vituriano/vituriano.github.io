@@ -23,7 +23,7 @@ collections:
           widget: "datetime",
           format: "YYYY-MM-DD hh:mm:ss",
         }
-      - { label: "image", name: "thumbnail", widget: "image", default: null }
+      - { label: "Image", name: "image", widget: "image", default: null }
       - { label: "Category", name: "category", widget: "string" }
       - { label: "Color", name: "color", widget: "string" }
       - { label: "Background", name: "background", widget: "image", default: null }

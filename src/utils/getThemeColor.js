@@ -1,4 +1,5 @@
-// eslint-disable-next-line consistent-return
+/* eslint-disable */
+
 const getThemeColor = () => {
   const theme = typeof window !== 'undefined' && window.__theme;
 
