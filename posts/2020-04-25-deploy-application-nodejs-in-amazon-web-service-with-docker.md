@@ -6,6 +6,8 @@ description: "I will be objective in this article, the goal is to describe a
 date: 2020-04-25 12:56:27
 category: infra
 color: "#ea4335"
+background: 
+image: 
 ---
 ## Instalations
 
