@@ -1,12 +1,12 @@
 ---
+date: 2020-04-25 12:56:27
 title: Deploy application NodeJS in Amazon Web Service with Docker
 description: "I will be objective in this article, the goal is to describe a
   process of deploy a application NodeJS in AWS with Docker, in Ubuntu 18 system
   or other compatible systems. "
-date: 2020-04-25 12:56:27
 category: infra
-color: "#ea4335"
 background: 
+color: "#ea4335"
 image: 
 ---
 ## Instalations
