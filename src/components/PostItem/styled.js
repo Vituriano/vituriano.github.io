@@ -39,10 +39,10 @@ export const PostWrapper = styled.section`
 
 export const PostTag = styled.div`
   align-items: center;
-  background: ${(props) => (props.background)} no-repeat center;
+  background: ${(props) => (props.background ? `url(${props.background})` : props.color)} no-repeat center;
   background-size: cover, contain;
   border-radius: 0;
-  color: var(--postColor);
+  color: #fff;
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
@@ -63,7 +63,7 @@ export const PostTag = styled.div`
   }
 
   ${media.lessThan('large')`
-    background: ${(props) => (props.color)} no-repeat center;
+    background: ${(props) => (props.color)};
     border-radius: 0;
     font-size: 1rem;
     min-height: auto;

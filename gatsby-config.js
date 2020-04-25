@@ -9,11 +9,12 @@ module.exports = {
     author: `@vitu_xisto`,
     position: `Computer Engineering Student`,
     description: `Developer at CITi and devops culture enthusiast. I have a thing for the world of web technologies, but my love is <3 robotics.`,
-    siteUrl: `http://vituriano.xyz`,
+    siteUrl: `http://vituriano.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet-async`,
     {
@@ -27,7 +28,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/assets/img`,
       },
     },
     {
@@ -59,7 +60,7 @@ module.exports = {
         background_color: `#16202c`,
         theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `static/assets/img/icon.png`, // This path is relative to the root of the site.
       },
     },
     {
