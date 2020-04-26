@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Vituriano/vituriano.github.io
   branch: master
-  site_domain: https://vituriano.netlify.app
+  site_domain: vituriano.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
