@@ -9,7 +9,7 @@ module.exports = {
     author: `@vitu_xisto`,
     position: `Computer Engineering Student`,
     description: `Developer at CITi and devops culture enthusiast. I have a thing for the world of web technologies, but my love is <3 robotics.`,
-    siteUrl: `http://vituriano.netlify.app`,
+    siteUrl: `https://vituriano.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

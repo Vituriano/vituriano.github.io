@@ -11,6 +11,10 @@ const links = [
     label: 'Inspiration',
     url: '/inspiration',
   },
+  {
+    label: 'Projects',
+    url: '/projects',
+  },
 ];
 
 export default links;
