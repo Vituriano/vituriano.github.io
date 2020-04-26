@@ -7,6 +7,10 @@ const links = [
     label: 'About Me',
     url: '/about',
   },
+  {
+    label: 'Inspiration',
+    url: '/inspiration',
+  },
 ];
 
 export default links;
