@@ -13,7 +13,7 @@ export const PostItemLink = styled(AniLink)`
   }
 
   &:hover {
-    color: var(--highlight);
+    color: var(--highlightPosts);
   }
 
   ${media.lessThan('large')`
