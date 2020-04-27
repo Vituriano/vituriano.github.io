@@ -60,7 +60,7 @@ export const MenuBarItem = styled.span`
     transition: 1s;
 
     &:hover{
-      color: #f9ca4a;
+      color: #d500d4;
       transition: 1s;
     }
   }
