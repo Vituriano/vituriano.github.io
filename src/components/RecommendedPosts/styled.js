@@ -6,7 +6,6 @@ export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);
   border-top: 1px solid var(--borders);
   background: var(--mediumBackground);
-  padding: 0 3.75rem 0 20rem;
 
   display: grid;
   grid-gap: 0;
@@ -26,7 +25,7 @@ export const RecommendedLink = styled(AniLink)`
   text-decoration: none;
   transition: background 0.5s;
   &:hover {
-    background: var(--borders);
+    background: #2b0f33f5 ;
   }
   &.previous {
     border-right: 1px solid var(--borders);

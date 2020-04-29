@@ -6,19 +6,15 @@ export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
-  padding: 0 3.75rem 0 20rem;
-
+  transition: background .5s;
+  
   body#grid & {
     background-color: var(--background);
   }
 
   &:hover {
     color: var(--highlightPosts);
-  }
-
-  ${media.lessThan('large')`
-    padding: 0;
-  `}
+  } 
 `;
 
 export const PostWrapper = styled.section`
@@ -26,11 +22,12 @@ export const PostWrapper = styled.section`
   border-bottom: 1px solid var(--borders);
   display: flex;
   width: 100%;
-
+  transition: background, color 1s;
+  
   body#grid & {
     border: none;
     padding: 0 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     flex-direction: column;
     justify-content: center;
   }
@@ -58,8 +55,8 @@ export const PostTag = styled.div`
   text-decoration: uppercase;
 
   body#grid & {
-    min-height: 200px;
-    min-width: 100%;
+    min-height: 170px;
+    width: 100%;
     margin: 0;
   }
 
@@ -88,6 +85,11 @@ export const PostItemInfo = styled.div`
   padding-left: 0;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  body#grid & {
+    margin: 0;
+    padding: 2rem .5rem;
+  }
 
   ${media.lessThan('large')`
     margin: 0;

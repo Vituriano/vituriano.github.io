@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 const Inspiration = () => (
   <Layout>
     <SEO title="Inspiration" />
-    <h1>Inspiration</h1>
     <p>this design was inspirated by willianjusten.</p>
   </Layout>
 );

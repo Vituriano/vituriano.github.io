@@ -17,7 +17,7 @@ export const SearchWrapper = styled.section`
   }
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0 5.75rem 1rem 22rem;
+    padding: 1rem 2rem;
 
     ${media.lessThan('large')`
       padding: 0.5rem 1rem;

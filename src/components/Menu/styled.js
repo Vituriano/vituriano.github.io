@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 export const ProfileWraper = styled.section`
-  color: var(--texts);
+  color: var(--menu);
   padding: 0 1rem;
   padding-top: 2rem;
   position: relative;

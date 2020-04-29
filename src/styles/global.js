@@ -76,6 +76,7 @@ const GlobalStyles = createGlobalStyle`
   body.dark {
     --borders: #2b0f33f5;
     --texts: #b3bec7;
+    --menu: #b3bec7;
     --postColor: #fff;
     --highlight: #d500d4;
     --highlightPosts: #dfa9f9;
@@ -87,10 +88,11 @@ const GlobalStyles = createGlobalStyle`
   body.light {
     --borders: #b6b6b6;
     --postColor: #111;
-    --texts: #555555;
-    --highlight: #1e0c26;
-    --highlightPosts: #1e0c26;
-    --mediumBackground: #b7cee3;
+    --menu: #b3bec7;
+    --texts: #444;
+    --highlight: #d500d4;
+    --highlightPosts: #0a040d;
+    --mediumBackground: #0a040d;
     --background: #fff;
     --white: #fff;
     --black: #222;

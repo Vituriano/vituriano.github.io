@@ -7,7 +7,7 @@ export const PaginationWrapper = styled.section`
   border-top: 1px solid var(--borders);
   color: var(--texts);
   display: flex;
-  padding: 1.5rem 6.75rem 1.5rem 23rem;
+  padding: 1.5rem 3rem;
   justify-content: space-between;
 
   ${media.lessThan('large')`

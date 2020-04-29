@@ -5,7 +5,7 @@ export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 8.75rem 0 25rem; 
+  padding: 5rem; 
 
   ${media.lessThan('large')`
     padding: 3rem 0 0;
@@ -51,7 +51,8 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
-  padding: 2rem 8.75rem 2rem 25rem;
+  padding: 5rem;
+  padding-top: 0;
 
   ${media.lessThan('large')`
     padding: 2rem 0;

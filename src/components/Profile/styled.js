@@ -4,7 +4,7 @@ import media from 'styled-media-query';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const ProfileWraper = styled.section`
-  color: var(--texts);
+  color: var(--menu);
   display: flex;
   flex-direction: column;
 
@@ -27,7 +27,7 @@ export const ProfileWraper = styled.section`
 `;
 
 export const ProfileLink = styled(AniLink)`
-  color: var(--texts);
+  color: var(--menu);
   text-decoration: none;
   transition: color 0.5s;
 
