@@ -16,8 +16,8 @@ export const SidebarWrapper = styled.aside`
 
   ${media.lessThan('large')`
     height: auto;
-    padding: 1rem 0;
     width: 100%;
+    padding: 0;
     .hide{
       display: none;
     }

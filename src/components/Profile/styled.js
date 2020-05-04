@@ -7,6 +7,7 @@ export const ProfileWraper = styled.section`
   color: var(--menu);
   display: flex;
   flex-direction: column;
+  background: var(--mediumBackground);
 
   .menu{
     display: none;
@@ -17,6 +18,7 @@ export const ProfileWraper = styled.section`
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    padding: 1rem 0;
     
     .menu{
       display: inline;

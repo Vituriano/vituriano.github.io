@@ -4,6 +4,7 @@ import media from 'styled-media-query';
 
 export const ProfileWraper = styled.section`
   display: none;
+  z-index: -1;
 
   ${media.lessThan('large')`
     display: block;
@@ -15,10 +16,10 @@ export const ProfileWraper = styled.section`
 
     @keyframes open {
       0% {top: -27em; height: 0;}
-      100% {top: 0; height: 22em;}
+      100% {top: 0; height: 18em;}
     }
     @keyframes close {
-      0% {top: 0; height: 22em;}
+      0% {top: 0; height: 18em;}
       100% {top: -27em; height: 0;}
     }
   `}
@@ -30,13 +31,13 @@ export const ProfileDescription = styled.p`
     font-weight: 300;
     line-height: 1.4;
     padding: 0 10%;
-    margin-top: 2rem;
   `}
 `;
 
 export const item = styled.div`
   ${media.lessThan('large')`
     display: block;
+    padding-bottom: 1em;
     background: var(--mediumBackground); 
   `}
 `;
