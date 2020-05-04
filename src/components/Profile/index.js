@@ -58,7 +58,7 @@ const Profile = () => {
         )}
         <S.ProfileDescription>{description}</S.ProfileDescription>
       </S.ProfileWraper>
-      {isOpenMode && <Menu description={description} />}
+      <Menu description={description} status={media} />
     </>
   );
 };

@@ -3,23 +3,35 @@ import styled from 'styled-components';
 import media from 'styled-media-query';
 
 export const ProfileWraper = styled.section`
-  color: var(--menu);
-  padding: 0 1rem;
-  padding-top: 2rem;
-  position: relative;
-  animation: open 1s both;
-  transition: opacity 1s ease;
-  @keyframes open {
-    0% {top: -20em; height: 0;}
-    100% {top: 0; height: 20em}
-  }
+  display: none;
+
+  ${media.lessThan('large')`
+    display: block;
+    color: var(--menu);
+    position: relative;
+    animation: ${(props) => (props.status)} 1s both;
+    transition: opacity 1s ease;
+    top: -27em; height: 0;
+
+    @keyframes open {
+      0% {top: -27em; height: 0;}
+      100% {top: 0; height: 22em;}
+    }
+    @keyframes close {
+      0% {top: 0; height: 22em;}
+      100% {top: -27em; height: 0;}
+    }
+  `}
 `;
 
 export const ProfileDescription = styled.p`
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.4;
-  padding: 0 10%;
+  ${media.lessThan('large')`
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 0 10%;
+    margin-top: 2rem;
+  `}
 `;
 
 export const item = styled.div`
