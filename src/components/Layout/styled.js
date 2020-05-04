@@ -7,8 +7,8 @@ export const LayoutWrapper = styled.section`
   padding: 0 3.75rem 0 20rem;  
   ${media.lessThan('large')`
     flex-direction: column;
-    padding: 0;
-  `}
+    padding: 5rem 0 4rem 0;
+  `} 
 `;
 
 export const LayoutMain = styled.main`
@@ -19,9 +19,8 @@ export const LayoutMain = styled.main`
 
   body#grid & {
     grid-template-areas: 'posts' 'pagination';
-  }
-
+  } 
   ${media.lessThan('large')`
-    padding: 5rem 0 4rem 0;
+    min-height: calc(100vh - 9rem);
   `}
 `;

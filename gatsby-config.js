@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Vituriano Xisto`,
     author: `@vitu_xisto`,
-    position: `Computer Engineering Student`,
+    position: `Computer Engineering Undergraduate`,
     description: `Developer at CITi and devops culture enthusiast. I have a thing for the world of web technologies, but my love is <3 robotics.`,
     siteUrl: `https://vituriano.netlify.app`,
   },
