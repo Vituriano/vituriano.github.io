@@ -16,7 +16,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
