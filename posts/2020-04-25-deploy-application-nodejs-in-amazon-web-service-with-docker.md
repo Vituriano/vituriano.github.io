@@ -1,5 +1,5 @@
 ---
-date: 2020-04-25 12:56:27
+date: 2020-04-25T12:56:27.000Z
 title: Deploy application NodeJS in Amazon Web Service with Docker
 description: "I will be objective in this article, the goal is to describe a
   process of deploy a application NodeJS in AWS with Docker, in Ubuntu 18 system
@@ -140,7 +140,7 @@ Now you can see your system in web.
 
 ### conect with another machine
 
-In the moment, you can connect to your instance only in machine where you created her. You have to copy the private key to you other machine you want to connect.
+In the moment**,** you can connect to your instance only in machine where you created her. You have to copy the private key to you other machine you want to connect.
 
 1 - First, run the command in machine where you create the instance:
 
